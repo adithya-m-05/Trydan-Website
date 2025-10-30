@@ -19,7 +19,7 @@ The system is composed of **four primary components**:
    It ingests live data, performs complex calculations (optimal lap, tire wear, AI strategy), and serves insights via a REST API.
 
 4. **Dashboard Frontend**  
-   A sophisticated single-page application (`public/index.html`, `public/script2.js`) providing rich, multi-column visualization of all live and processed data for race engineers and drivers.
+   A sophisticated single-page application providing rich, multi-column visualization of all live and processed data for race engineers and drivers.
 
 ---
 
@@ -45,7 +45,7 @@ The system is composed of **four primary components**:
 
 ---
 
-## 🔧 Tech Stack
+## 🛠️ Tech Stack
 
 | Component | Technologies |
 |------------|--------------|
@@ -58,23 +58,33 @@ The system is composed of **four primary components**:
 
 ---
 
-## 🗁️ Repository Structure
+## 📁 Repository Structure
 
 ```bash
 .
-├── 📄 index.htm               # Main public website
-├── 📄 team.html               # Public team page
-├── 📄 login.html              # Public login page
-├── 📄 styles.css              # CSS for public website
-├── 📄 script.js               # JS for public website (hamburger menu, etc.)
+├── 📄 index.htm                           # Main public website
+├── 📄 team.html                           # Public team page
+├── 📄 login.html                          # Public login page
+├── 📄 styles.css                          # CSS for public website
+├── 📄 script.js                           # JS for public website (hamburger menu, etc.)
 │
-├── 📄 server.js               # Node.js server to host the dashboard
-├── 📄 racing_api_server.py    # Python Flask AI/ML API server
-│
-└── 🗁 public/
-    ├── 📄 index.html          # Dashboard HTML structure
-    ├── 📄 style.css           # Dashboard CSS (green/black theme)
-    └── 📄 script2.js          # Dashboard core logic
+├── 📁 TrydanDashboardML2/
+│   ├── 📁 backend/
+│   │   ├── 📄 racing_api_server.py         # Python Flask AI/ML API server
+│   │   ├── 📄 racing_engine_gps_speed.py   # Core telemetry processing engine
+│   │   ├── 📄 requirements.txt             # Python dependencies
+│   │   └── 📁 sessions/                    # Folder for storing session data
+│   │
+│   └── 📁 frontend/
+│       ├── 📄 server.js                   # Node.js server to host the dashboard
+│       ├── 📄 package.json                # Node.js project metadata
+│       ├── 📄 package-lock.json           # Lockfile for npm dependencies
+│       ├── 📁 node_modules/               # Node.js dependencies
+│       │
+│       └── 📁 public/
+│           ├── 📄 index.html              # Dashboard HTML structure
+│           ├── 📄 script.js               # Dashboard core logic
+│           └── 📄 style.css               # Dashboard CSS (green/black theme)
 ```
 
 ---
@@ -97,18 +107,17 @@ This system requires **two separate terminals** to run simultaneously.
 **Node.js Dependencies:**
 
 ```bash
-# From the root project directory
-npm install express
+# From the frontend directory
+cd TrydanDashboardML2/frontend
+npm install
 ```
 
 **Python Dependencies:**
 
 ```bash
-# (Recommended) Use a virtual environment
-# python -m venv venv
-# source venv/bin/activate  (or .\venv\Scripts\activate on Windows)
-
-pip install Flask flask-cors pandas
+# From the backend directory
+cd TrydanDashboardML2/backend
+pip install -r requirements.txt
 ```
 
 > **Note:** `racing_api_server.py` imports `racing_engine_gps_speed`.  
@@ -116,7 +125,7 @@ pip install Flask flask-cors pandas
 
 ---
 
-### 🧬 Step 2: Run the Backend Servers
+### 🧠 Step 2: Run the Backend Servers
 
 You’ll need **two terminals** open in the root of the project directory.
 
@@ -124,10 +133,11 @@ You’ll need **two terminals** open in the root of the project directory.
 This server runs the AI “brain” and provides data to the dashboard.
 
 ```bash
+cd TrydanDashboardML2/backend
 python racing_api_server.py
 ```
 
-You should see output like:
+Expected output:
 ```
 Flask server running on http://localhost:5000
 ```
@@ -136,6 +146,7 @@ Flask server running on http://localhost:5000
 This server hosts the dashboard web files.
 
 ```bash
+cd TrydanDashboardML2/frontend
 node server.js
 ```
 
@@ -158,7 +169,7 @@ Server live on http://localhost:3000
 
 ### 🔧 Simulator Mode (Default)
 
-By default, `public/script2.js` has:
+By default, `public/script.js` has:
 
 ```js
 const USE_LOCAL_DATA = true;
@@ -169,7 +180,7 @@ Perfect for **UI testing and development**.
 
 ---
 
-### 🚀 Live Mode (Advanced)
+### 🛰️ Live Mode (Advanced)
 
 To use **live telemetry data**:
 
@@ -177,7 +188,7 @@ To use **live telemetry data**:
    ```js
    const USE_LOCAL_DATA = false;
    ```
-   in `public/script2.js`.
+   in `public/script.js`.
 
 2. Implement fetch logic to call your Python API, e.g.:
    ```js
@@ -196,4 +207,3 @@ To use **live telemetry data**:
 **Trydan Racing Team – NMIT**  
 🚗 *Developed for real-time racing innovation and driver optimization.*
 
-  Website developed by: adithya-m-05 , sujay-cj , mohdibrahim77
