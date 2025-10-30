@@ -207,3 +207,4 @@ To use **live telemetry data**:
 **Trydan Racing Team – NMIT**  
 🚗 *Developed for real-time racing innovation and driver optimization.*
 
+   Website developed by: adithya-m-05 , sujay-cj , mohdibrahim77
