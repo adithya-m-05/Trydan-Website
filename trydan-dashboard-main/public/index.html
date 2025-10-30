@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trydan Telemetry Dashboard</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+</head>
+<body>
+
+    <!-- Updated to point to your local logo file -->
+    <img id="logo" src="Trydan logo.png" alt="Trydan Logo">
+
+    <div class="dashboard-container">
+        <div class="card" id="map-card">
+            <div id="map"></div>
+        </div>
+        
+        <div id="stats-card">
+            <div class="card" id="rpm-card">
+                <h2 class="card-title">RPM</h2>
+                <div class="chart-container"><canvas id="rpmChart"></canvas></div>
+            </div>
+            <div class="card" id="speed-card">
+                <h2 class="card-title">Speed (km/h)</h2>
+                <div class="chart-container"><canvas id="speedChart"></canvas></div>
+            </div>
+        </div>
+        
+        <div class="card" id="indicators-card">
+            <div class="indicator">
+                <h2 class="card-title">GEAR</h2>
+                <span id="gear-indicator" class="indicator-value">N</span>
+            </div>
+             <div class="indicator">
+                <h2 class="card-title">BRAKE</h2>
+                <button id="brake-button">OFF</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trydan Racing - NMIT Kart Racing Team</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="hero-bg">
+        <span class="streak"></span> <span class="streak"></span> <span class="streak"></span>
+        <span class="streak"></span> <span class="streak"></span> <span class="streak"></span>
+        <span class="star"></span> <span class="star"></span> <span class="star"></span>
+        <span class="star"></span> <span class="star"></span> <span class="star"></span>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <img id="logo" src="logo.jpg" alt="LOGO" width="50px" height="50px">
+                        </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">TRYDAN</span>
+                    <span class="logo-subtitle">NMIT Racing</span>
+                </div>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#events" class="nav-link">Events</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- MODIFIED: "Join Team" button now links to login.html and says "Login" -->
+            <a href="login.html" class="join-btn">Login</a>
+
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <div class="badge-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L15 9L22 10L17 15L18 22L12 18L6 22L7 15L2 10L9 9L12 2Z" fill="#00ff88"/>
+                    </svg>
+                </div>
+                <span>NMIT Kart Racing Team</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-green">TRYDAN</span> 
+                <span class="title-white">RACING</span>
+            </h1>
+            <p class="hero-description">
+                We're Trydan Racing from NMIT — a passionate team of engineering students pushing the limits of performance on the track. Join us as we compete, innovate, and race to victory.
+            </p>
+            <div class="hero-buttons">
+                <!-- This button remains unchanged -->
+                <a href="#contact" class="btn-primary">Join Our Team</a>
+                <a href="#about" class="btn-secondary">Learn More</a>
+            </div>
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-number">16</div>
+                    <div class="stat-label">Triumphs</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">👥</div>
+                    <div class="stat-number">25</div>
+                    <div class="stat-label">Members</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-icon">⚡</div>
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Races</div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- All other sections (About, Team, Achievements, etc.) remain unchanged -->
+
+    <section class="section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">About Us</div>
+                <h2>Passion Meets Performance</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="car.jpg" alt="Racing Car in Garage">
+                </div>
+                <div class="about-text">
+                    <p>Team Trydan is the official go-kart club of Nitte Meenakshi Institute of Technology (NMIT), Bengaluru, comprising passionate students from diverse engineering disciplines. The team is dedicated to designing and building high-performance go-karts that combine innovation, precision, and engineering excellence.
+With a shared drive for motorsport and technology, we aim to create machines that deliver speed, safety, and an unforgettable racing experience.
+Fueled by creativity and teamwork, Team Trydan races ahead with the vision of bringing professional racing excitement within everyone's reach.</p>
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-wrench feature-icon"></i>
+                            <div>
+                                <h3>Engineering Excellence</h3>
+                                <p>We apply classroom knowledge to real-world racing, designing and building our own karts from the ground up.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-bullseye feature-icon"></i>
+                            <div>
+                                <h3>Competitive Spirit</h3>
+                                <p>We compete in regional and national championships, constantly pushing ourselves to improve and innovate.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-heart feature-icon"></i>
+                            <div>
+                                <h3>Team Unity</h3>
+                                <p>From engineers to drivers, we work together as one team, supporting each other on and off the track.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="team">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Our Team</div>
+                <h2>Meet the Drivers & Engineers</h2>
+                <p>A diverse group of talented students from various engineering disciplines working together to achieve racing excellence.</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="card-initial">A</div>
+                    <h3>Abhay P S</h3>
+                    <span class="role team-captain">Vice Captain</span>
+                    <p class="discipline">Mechanical Engineering</p>
+                    <p class="specialty">Specialty: Power Train</p>
+                </div>
+                <div class="team-card">
+                    <div class="card-initial">S</div>
+                    <h3>Jeevan S</h3>
+                    <span class="role lead-driver">Captain</span>
+                    <p class="discipline">Mechanical Engineering</p>
+                    <p class="specialty">Specialty: Lead Driver</p>
+                </div>
+                <div class="team-card">
+                    <div class="card-initial">J</div>
+                    <h3>Sameera G Kashi</h3>
+                    <span class="role chief-engineer">Manager</span>
+                    <p class="discipline">Mechanical Engineering</p>
+                    <p class="specialty">Specialty: Vehicle Dynamics</p>
+                </div>
+                <div class="team-card">
+                    <div class="card-initial">M</div>
+                    <h3>Rohit P Nekar</h3>
+                    <span class="role driver">Design Lead</span>
+                    <p class="discipline">Mechanical Engineering</p>
+                    <p class="specialty">Specialty: Vehicle Design</p>
+                </div>
+                <div class="team-card">
+                    <div class="card-initial">C</div>
+                    <h3>Subramanya L</h3>
+                    <span class="role suspension-lead">Electrical Lead</span>
+                    <p class="discipline">Mechanical Engineering</p>
+                    <p class="specialty">Specialty: Vehicle Electronics</p>
+                </div>
+                <div class="team-card">
+                    <div class="card-initial">R</div>
+                    <h3>Naveen Kumar M</h3>
+                    <span class="role aerodynamics">Power-Train Lead</span>
+                    <p class="discipline">Mechanical Engineering</p>
+                    <p class="specialty">Specialty: Powertrain</p>
+                </div>
+                <div class="team-card">
+                    <div class="card-initial">R</div>
+                    <h3>Murthan Ashok</h3>
+                    <span class="role aerodynamics">Braking Lead</span>
+                    <p class="discipline">Aeronautical Engineering</p>
+                    <p class="specialty">Specialty: Braking</p>
+                </div>
+                <div class="team-card">
+                    <div class="card-initial">R</div>
+                    <h3>Kevin Joseph</h3>
+                    <span class="role aerodynamics">Innovation Lead</span>
+                    <p class="discipline">Mechanical Engineering</p>
+                    <p class="specialty">Specialty: Innovation</p>
+                </div>
+               
+                <div class="team-card">
+                    <div class="card-initial">R</div>
+                    <h3>Tanush S N</h3>
+                    <span class="role aerodynamics">Social Media Lead</span>
+                    <p class="discipline">Mechanical Engineering</p>
+                    <p class="specialty">Specialty: Editing</p>
+                </div>
+                <div class="team-card" style="align-self: center";>
+                    <div class="card-initial">R</div>
+                    <h3>Mohammed Ibrahim</h3>
+                    <span class="role aerodynamics">Web Design Lead</span>
+                    <p class="discipline">Information Science Engineering</p>
+                    <p class="specialty">Specialty: Backend and DBMS</p>
+                </div>
+
+                            <!-- Show More Button -->
+            
+            </div>
+            <div class="show-more-container" style="margin-top: 75px;">
+                <a href="team.html" class="btn-secondary">Show More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="achievements">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Achievements</div>
+                <h2>Our Track Record</h2>
+                <p>Years of dedication and hard work have resulted in numerous victories and accolades.</p>
+            </div>
+            <div class="achievements-stats">
+                <div class="ach-stat-item">
+                    <i class="fas fa-trophy ach-icon"></i>
+                    <span class="ach-number">16</span>
+                    <span class="ach-label">Titles Earned</span>
+                </div>
+                <div class="ach-stat-item">
+                    <i class="fas fa-medal ach-icon"></i>
+                    <span class="ach-number">8</span>
+                    <span class="ach-label">Podium Finishes</span>
+                </div>
+                <div class="ach-stat-item">
+                    <i class="fas fa-award ach-icon"></i>
+                    <span class="ach-number">1</span>
+                    <span class="ach-label">Design Awards</span>
+                </div>
+                <div class="ach-stat-item">
+                    <i class="fas fa-chart-line ach-icon"></i>
+                    <span class="ach-number">95%</span>
+                    <span class="ach-label">Win Rate (2024)</span>
+                </div>
+            </div>
+            <h3 class="recent-victories-title">Recent Victories</h3>
+            <div class="recent-victories">
+                <div class="victory-item">
+                    <span class="victory-year">2025</span>
+                    <div class="victory-details">
+                        <h4>Winner of Technical Inspection(EKVC) 2025</h4>
+                        <p>1st Place Overall</p>
+                    </div>
+                    <i class="fas fa-trophy victory-icon"></i>
+                </div>
+                <div class="victory-item">
+                    <span class="victory-year">2025</span>
+                    <div class="victory-details">
+                        <h4>Best Captain of the Season (EKVC)</h4>
+                        <p>Winner</p>
+                    </div>
+                    <i class="fas fa-award victory-icon"></i>
+                </div>
+                <div class="victory-item">
+                    <span class="victory-year">2025</span>
+                    <div class="victory-details">
+                        <h4>Best Design Award (EKVC)</h4>
+                        <p>Winner</p>
+                    </div>
+                    <i class="fas fa-award victory-icon"></i>
+                </div>
+                 <div id="moreAchievements" class="more-achievements-list">
+                    <div class="victory-item">
+                        <span class="victory-year">2024</span>
+                        <div class="victory-details">
+                            <h4>Technical Inspection SEVC</h4>
+                            <p>2nd Place </p>
+                        </div>
+                        <i class="fas fa-medal victory-icon"></i>
+                    </div>
+                    <div class="victory-item">
+                        <span class="victory-year">2024</span>
+                        <div class="victory-details">
+                            <h4>Technical Inspection (ISIE IKR)</h4>
+                            <p>1st Place </p>
+                        </div>
+                        <i class="fas fa-medal victory-icon"></i>
+                    </div>
+                    <div class="victory-item">
+                        <span class="victory-year">2024</span>
+                        <div class="victory-details">
+                            <h4>ISIE IKR</h4>
+                            <p>Overall 2nd Runner up</p>
+                        </div>
+                        <i class="fas fa-award victory-icon"></i>
+                    </div>
+                    <div class="victory-item">
+                        <span class="victory-year">2024</span>
+                        <div class="victory-details">
+                            <h4>Best Innovation (ISIE IKR)</h4>
+                            <p>1st Place Overall</p>
+                        </div>
+                        <i class="fas fa-trophy victory-icon"></i>
+                    </div>
+                    <div class="victory-item">
+                        <span class="victory-year">2024</span>
+                        <div class="victory-details">
+                            <h4>Best Future Award (ISIE IKR)</h4>
+                            <p>1st Place Overall</p>
+                        </div>
+                        <i class="fas fa-trophy victory-icon"></i>
+                    </div>
+                    <div class="victory-item">
+                        <span class="victory-year">2024</span>
+                        <div class="victory-details">
+                            <h4>Team Spirit Award (SEVC) </h4>
+                            <p>Winner</p>
+                        </div>
+                        <i class="fas fa-trophy victory-icon"></i>
+                    </div>
+                    <div class="victory-item">
+                        <span class="victory-year">2025</span>
+                        <div class="victory-details">
+                            <h4>Manthan Business Plan</h4>
+                            <p>Top 7% Teams</p>
+                        </div>
+                        <i class="fas fa-trophy victory-icon"></i>
+                    </div>
+                    <div class="victory-item">
+                        <span class="victory-year">2024</span>
+                        <div class="victory-details">
+                            <h4>Innovation Award (SDMCET)</h4>
+                            <p>Top 5</p>
+                        </div>
+                        <i class="fas fa-trophy victory-icon"></i>
+                    </div>
+                    <div class="victory-item">
+                        <span class="victory-year">2023</span>
+                        <div class="victory-details">
+                            <h4>Safety Inspection ISE IKR</h4>
+                            <p>2nd Runner up</p>
+                        </div>
+                        <i class="fas fa-trophy victory-icon"></i>
+                    </div>
+                    <div class="victory-item">
+                        <span class="victory-year">2025</span>
+                        <div class="victory-details">
+                            <h4>Inspiring Faculty EKVC</h4>
+                            <p>Winner</p>
+                        </div>
+                        <i class="fas fa-trophy victory-icon"></i>
+                    </div>
+                    <div class="victory-item">
+                        <span class="victory-year">2024</span>
+                        <div class="victory-details">
+                            <h4>Safety Inspection (ISIE IKR)</h4>
+                            <p>Winner</p>
+                        </div>
+                        <i class="fas fa-trophy victory-icon"></i>
+                    </div>
+                    <div class="victory-item">
+                        <span class="victory-year">2024</span>
+                        <div class="victory-details">
+                            <h4>Inspiring Faculty SEVC</h4>
+                            <p>Winner</p>
+                        </div>
+                        <i class="fas fa-trophy victory-icon"></i>
+                    </div>
+                   </div>
+                </div>
+
+            <div class="show-more-container">
+                <button id="showMoreBtn" class="btn-secondary">Show More</button>
+            </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="events">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Events</div>
+                <h2>Upcoming Races & Events</h2>
+                <p>Join us at our upcoming races and team events. Come watch us compete or learn about joining the team!</p>
+            </div>
+            <div class="events-list">
+                <div class="event-item">
+                    <div class="event-date">
+                        <span>Oct</span>
+                        <p>30</p>
+                    </div>
+                    <div class="event-details">
+                        <h4>IKR 2025</h4>
+                        <p><i class="fas fa-clock"></i> 10:00 AM &nbsp;&nbsp; <i class="fas fa-map-marker-alt"></i> Coimbatore</p>
+                    </div>
+                    <div class="event-status">
+                        <span class="status-tag">Upcoming</span>
+                        <a href="#" class="details-btn">Details</a>
+                    </div>
+                </div>
+                <div class="event-item">
+                    <div class="event-date">
+                        <span>Mar</span>
+                        <p>12</p>
+                    </div>
+                    <div class="event-details">
+                        <h4>SEVC 2026</h4>
+                        <p><i class="fas fa-clock"></i> 2:00 PM &nbsp;&nbsp; <i class="fas fa-map-marker-alt"></i> Campus Track</p>
+                    </div>
+                    <div class="event-status">
+                        <span class="status-tag">Upcoming</span>
+                        <a href="#" class="details-btn">Details</a>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Gallery</div>
+                <h2>Moments from the Track</h2>
+                <p>Experience the thrill and excitement through our collection of racing moments.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="pic1.jpg" alt="Karts racing on track">
+                </div>
+                <div class="gallery-item small">
+                    <img src="pic2.jpg" alt="Driver helmet against the sun">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-tag">Get In Touch</div>
+                <h2>Join Our Team</h2>
+                <p>Interested in joining Trydan Racing? We welcome students from all engineering disciplines at NMIT. Get in touch to learn more!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-box">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>trydan@nmit.ac.in</p>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Visit Us</h3>
+                        <p>Engineering Building<br>NMIT Campus, Nitte</p>
+                    </div>
+                    <div class="social-links">
+                        <h3>Follow Our Journey</h3>
+                        <div>
+                            <a href="https://www.instagram.com/teamtrydan" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://in.linkedin.com/in/trydan-nmit-b97969261" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://youtube.com/@teamtrydannmit?si=4pmF__o-PAvIFNKa" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your.email@nmit.ac.in" required>
+                        </div>
+                         <div class="form-group">
+                            <label for="major">Major</label>
+                            <input type="text" id="major" name="major" placeholder="e.g., Mechanical Engineering" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us why you want to join the team..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-about">
+                 <div class="logo">
+                    <div class="logo-text">
+                        <span class="logo-title">TRYDAN</span>
+                        <span class="logo-subtitle">NMIT Racing</span>
+                    </div>
+                </div>
+                <p>A collegiate kart racing team from NMIT dedicated to engineering excellence and competitive spirit.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> trydan@nmit.ac.in</p>
+                <p><i class="fas fa-map-marker-alt"></i> Engineering Building<br>NMIT Campus, Nitte</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Trydan Motorsports - NMIT. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

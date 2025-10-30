@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Trydan Racing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="login-page-body">
+    <!-- Using the same hero-bg for consistent background -->
+    <div class="hero-bg">
+        <span class="streak"></span> <span class="streak"></span> <span class="streak"></span>
+        <span class="streak"></span> <span class="streak"></span> <span class="streak"></span>
+        <span class="star"></span> <span class="star"></span> <span class="star"></span>
+        <span class="star"></span> <span class="star"></span> <span class="star"></span>
+    </div>
+
+    <div class="login-container">
+        <a href="index.htm" class="logo" style="text-decoration: none;">
+            
+            <div class="logo-text">
+                <span class="logo-title">TRYDAN</span>
+                <span class="logo-subtitle">NMIT Racing</span>
+            </div>
+        </a>
+
+        <h2>Club Member Login</h2>
+        
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            
+            <div id="errorMessage" class="error-message"></div>
+
+            <button type="submit" class="btn-primary">Login</button>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
