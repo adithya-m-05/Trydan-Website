@@ -140,4 +140,6 @@ Set USE_LOCAL_DATA = false in public/script2.js.
 Implement the fetch logic in script2.js to call your Python API endpoints (e.g., fetch('http://localhost:5000/api/dashboard')).
 
 Feed live telemetry data from your kart (e.g., via MQTT) to the racing_api_server.py's /api/telemetry endpoint.
+
+
  Website developed by : adithya-m-05, sujay-cj , mohdibrahim77
